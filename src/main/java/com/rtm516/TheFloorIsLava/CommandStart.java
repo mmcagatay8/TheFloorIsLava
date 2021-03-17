@@ -20,7 +20,7 @@ public class CommandStart implements CommandExecutor {
             }
         }
 		
-		TheFloorIsLava.instance.sendMessage("Starting The Floor Is Lava!");
+		TheFloorIsLava.instance.sendMessage("Yerde Lav Var Başladı!");
 		TheFloorIsLava.instance.sendMessage(TheFloorIsLava.instance.getConfiguration().getInt("gracePeriod") + " minutes until the first lava rise");
 		
 		TheFloorIsLava.instance.getServer().getScheduler().scheduleSyncDelayedTask(TheFloorIsLava.instance, new Runnable() {
@@ -41,11 +41,11 @@ public class CommandStart implements CommandExecutor {
 	}
 	
 	private void doLava() {
-		TheFloorIsLava.instance.sendMessage("10s until next lava rise");
+		TheFloorIsLava.instance.sendMessage("Lavın Yükselmesine 10 sn");
 
 		TheFloorIsLava.instance.getServer().getScheduler().scheduleSyncDelayedTask(TheFloorIsLava.instance, new Runnable() {
 			public void run() {
-				TheFloorIsLava.instance.sendMessage("5s until next lava rise");
+				TheFloorIsLava.instance.sendMessage("Lavın Yükselmesine 5 sn");
 			}
 		}, 20L * 5L);
 		
@@ -57,25 +57,25 @@ public class CommandStart implements CommandExecutor {
 		
 		TheFloorIsLava.instance.getServer().getScheduler().scheduleSyncDelayedTask(TheFloorIsLava.instance, new Runnable() {
 			public void run() {
-				TheFloorIsLava.instance.sendMessage("3s until next lava rise");
+				TheFloorIsLava.instance.sendMessage("Lavın Yükselmesine 3 sn");
 			}
 		}, 20L * 7L);
 		
 		TheFloorIsLava.instance.getServer().getScheduler().scheduleSyncDelayedTask(TheFloorIsLava.instance, new Runnable() {
 			public void run() {
-				TheFloorIsLava.instance.sendMessage("2s until next lava rise");
+				TheFloorIsLava.instance.sendMessage("Lavın Yükselmesine 2 sn");
 			}
 		}, 20L * 8L);
 		
 		TheFloorIsLava.instance.getServer().getScheduler().scheduleSyncDelayedTask(TheFloorIsLava.instance, new Runnable() {
 			public void run() {
-				TheFloorIsLava.instance.sendMessage("1s until next lava rise");
+				TheFloorIsLava.instance.sendMessage("Lavın Yükselmesine 1 sn");
 			}
 		}, 20L * 9L);
 		
 		TheFloorIsLava.instance.getServer().getScheduler().scheduleSyncDelayedTask(TheFloorIsLava.instance, new Runnable() {
 			public void run() {				
-				TheFloorIsLava.instance.sendMessage("Lava rising!");
+				TheFloorIsLava.instance.sendMessage("Lav Yükseliyor!");
 				
 				LavaInfo lavaInfo = TheFloorIsLava.instance.getLavaInfo();
 				
